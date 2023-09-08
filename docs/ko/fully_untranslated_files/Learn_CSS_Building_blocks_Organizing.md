@@ -126,9 +126,9 @@ CSS 의 모든 사항에 대해 일일이 설명할 필요는 없습니다. 대�
 
 아마도 여러분은 무언가를 성취하기 위해 자습서를 따랐을 것입니다. 그리고 CSS 는 약간 눈에 띄지 않습니다. 이 경우, 여러분은 주석에 자습서의 URL 을 추가할 수 있습니다. 1년 정도 지나고 이 프로젝트로 돌아왔을 때 자신에게 감사할 것입니다. 그에 대한 훌륭한 자습서가 있었음을 모호하게 기억할 수 있습니다. 그러나 어디에 있습니까?
 
-### Create logical sections in your stylesheet
+### 스타일 시트에서 논리적인 섹션 생성하기
 
-It is a good idea to have all of the common styling first in the stylesheet. This means all of the styles which will generally apply unless you do something special with that element. You will typically have rules set up for:
+모든 일반적인 스타일을 스타일시트에서 먼저 설정하는 것이 좋습니다. 이는 당신이 해당 요소로 특별한 작업을 하지 않는 한 일반적으로 적용되는 모든 스타일을 의미합니다. 일반적으로 다음과 같은 규칙을 설정할 수 있습니다:
 
 - `body`
 - `p`
@@ -137,7 +137,7 @@ It is a good idea to have all of the common styling first in the stylesheet. Thi
 - The `table` properties
 - Links
 
-In this section of the stylesheet we are providing default styling for the type on the site, setting up a default style for data tables and lists and so on.
+스타일시트의 이 섹션에서는 사이트의 유형에 대한 기본 스타일을 제공하고 데이터 테이블 및 목록 등에 대한 기본 스타일을 설정합니다.
 
 ```css
 /* || GENERAL STYLES */
@@ -151,7 +151,7 @@ ul { ... }
 blockquote { ... }
 ```
 
-After this section we could define a few utility classes, for example a class that removes the default list style for lists we're going to display as flex items or in some other way. If you have a few things you know you will want to apply to lots of different elements, they can come in this section.
+이 섹션이 끝나면 몇 가지 유틸리티 클래스를 정의할 수 있습니다. 예를 들어 플렉스 항목으로 표시하거나 다른 방식으로 표시할 목록의 기본 목록 스타일을 제거하는 클래스를 정의할 수 있습니다. 다양한 요소에 적용하고 싶은 몇 가지가 있다면 이 섹션에서 넣으면 됩니다.
 
 ```css
 /* || UTILITIES */
@@ -164,8 +164,7 @@ After this section we could define a few utility classes, for example a class th
 
 ...
 ```
-
-Then we can add everything that is used sitewide. That might be things like the basic page layout, the header, navigation styling, and so on.
+그러고 나서 사이트 전체에 사용된 모든 것을 추가할 수 있습니다. 기본 페이지 레이아웃, 헤더, 네비게이션 스타일 등과 같은 것이 해당됩니다.
 
 ```css
 /* || SITEWIDE */
